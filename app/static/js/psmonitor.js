@@ -48,7 +48,7 @@ $( document ).ready(function() {
                   lineCap: 'butt'
               }},
               {dashedHorizontalLine: {
-                  y: 20,
+                  y: 13,
                   lineWidth: 0.5,
                   color: 'rgb(24, 116, 205)',
                   shadow: false,
