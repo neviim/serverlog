@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Monitorando</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.jqplot.min.css') }}"/>
+<style>div {margin:auto;}</style>
+</head>
+<body>
+
+    <div id="cpu_user" style="height:400px;width:800px; "></div>
+    <div id="cpu_system" style="height:400px;width:800px; "></div>
+    <div id="cpu_irq" style="height:400px;width:800px; "></div>
+    <div id="cpu_nice" style="height:400px;width:800px; "></div>
+    <div id="cpu_idle" style="height:400px;width:800px; "></div>
+
+    <div id="disk_root" style="height:400px;width:800px; "></div>
+    <div id="phymem" style="height:400px;width:800px; "></div>
+    <div id="amd" style="height:400px;width:800px; "></div>
+
+    <!-- scripts -->
+    <script type="text/javascript" src="static/js/jquery-latest-1.10.2/jquery-latest.min.js" ></script>
+    <script type="text/javascript" src="static/js/jqplot.1.0.8/jquery.jqplot.js"></script>
+    <script type="text/javascript" src="static/js/jqplot.1.0.8/plugins/jqplot.json2.js"></script>
+    <script type="text/javascript" src="static/js/jqplot.1.0.8/plugins/jqplot.dateAxisRenderer.js"></script>
+    <script type="text/javascript" src="static/js/jqplot.1.0.8/plugins/jqplot.highlighter.js"></script>
+    <script type="text/javascript" src="static/js/jqplot.1.0.8/plugins/jqplot.cursor.js"></script>
+    <!--[if lt IE 9]>
+      <script language="javascript" type="text/javascript" src="static/js/jqplot.1.0.8/excanvas.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="static/js/psmonitor.js" ></script>
+
+</body>
+</html>
+{% endblock %}
